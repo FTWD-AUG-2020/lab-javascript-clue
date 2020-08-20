@@ -218,3 +218,11 @@ function pickMystery() {
 }
 
 // ITERATION 3
+function revealMystery({suspect,weapon,room}){
+  
+  return  `${suspect.firstName} ${suspect.lastName} killed Mr. Boddy using the ${weapon.name} in the ${room.name}!`
+}
+
+
+
+
