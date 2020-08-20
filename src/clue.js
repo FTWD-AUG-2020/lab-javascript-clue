@@ -68,47 +68,47 @@ let mrMustard = {
 // ### Weapons
 
 let rope = {
-  name: rope,
+  name: 'rope',
   weight: 10,
 };
 
 let knife = {
-  name: knife,
+  name: 'knife',
   weight: 8,
 };
 
 let candlestick = {
-  name: candlestick,
+  name: 'candlestick',
   weight: 2,
 };
 
 let dumbbell = {
-  name: dumbbell,
+  name: 'dumbbell',
   weight: 30,
 };
 
 let poison = {
-  name: poison,
+  name: 'poison',
   weight: 2,
 };
 
 let axe = {
-  name: axe,
+  name: 'axe',
   weight: 15,
 };
 
 let bat = {
-  name: bat,
+  name: 'bat',
   weight: 13,
 };
 
 let trophy = {
-  name: trophy,
+  name: 'trophy',
   weight: 25,
 };
 
 let pistol = {
-  name: pistol,
+  name: 'pistol',
   weight: 20,
 };
 
@@ -208,5 +208,13 @@ function selectRandom(arr){
   return arr[Math.floor(Math.random() *arr.length)];
 }
 
+function pickMystery() {
+  let envelope = {
+    suspect: selectRandom(suspectsArray),
+    weapon: selectRandom(weaponsArray),
+    room: selectRandom(roomsArray),
+  };
+  return envelope;
+}
 
 // ITERATION 3
