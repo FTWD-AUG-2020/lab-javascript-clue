@@ -204,4 +204,9 @@ const weaponsArray = [
 
 // ITERATION 2
 
+function selectRandom(arr){
+  return arr[Math.floor(Math.random() *arr.length)];
+}
+
+
 // ITERATION 3
